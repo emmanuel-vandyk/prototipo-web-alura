@@ -1,0 +1,143 @@
+/* ENCABEZADO */
+.headerPrincipal .container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.headerPrincipal-nav {
+    display: flex;
+}
+
+/* NUESTROS CURSOS */
+.contenidoPrincipal-cursos {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.contenidoPrincipal-cursos-link {
+    display: flex;
+    width: 23%;
+}
+
+/* SECCION VIDEO */
+.videoSobre .container {
+    display: flex;
+}
+
+.videoSobre-sobre {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 0 2em; 
+}
+
+.videoSobre-video {
+    flex-grow: 2;
+    flex-shrink: 2;
+}
+
+.videoSobre-sobre-list {
+    flex-grow: 2; 
+}
+
+/* MAPA DE CURSOS */
+.rodapePrincipal-navMap-list {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+}
+
+
+/* PIE DE PÁGINA */
+.rodapePrincipal-patrocinadores .container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.rodapePrincipal-patrocinadores-list {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 70%;
+    margin-right: 5%;
+}
+
+/* Formulario Pie de página */
+
+.rodapePrincipal-contatoForm {
+    width: 25%;
+}
+
+.rodapePrincipal-contatoForm-fieldset {
+    display: flex;
+}
+
+/* RESPONISVE DESIGN */
+
+/* MOBILE - HEADER */
+
+@media (max-width: 768px) {
+    .headerPrincipal .container {
+        flex-direction: column;
+        align-items: initial;
+    }
+
+    /* BARRA DE NAVEGACIÓN */
+    .headerPrincipal-nav {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .headerPrincipal-nav-link-app {
+        order: -1;
+    }
+
+    /* NUESTROS CURSOS */
+    .contenidoPrincipal-cursos {
+        flex-direction: column;
+    }
+
+    .contenidoPrincipal-cursos-link {
+        width: 100%;
+    }
+
+    /* SECCION VIDEO */
+    .videoSobre .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .videoSobre-video {
+        align-self: center;
+        flex-shrink: 0;
+    }
+
+    /* MAPA DE CURSOS */
+    .rodapePrincipal-navMap-list {
+        height: auto;
+        flex-wrap: nowrap;
+    }
+
+    /* PIE DE PÁGINA */
+    .rodapePrincipal-patrocinadores .container {
+        flex-direction: column;
+    }
+
+    /* FORM */
+    .rodapePrincipal-contatoForm {
+        width: 100%;
+    }
+
+    .rodapePrincipal-patrocinadores-list {
+        align-items: center;
+        width: 100%;
+        margin: 0;
+    }
+
+    .rodapePrincipal-contatoForm-fieldset {
+        justify-content: center;
+    }
+
+}
